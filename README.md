@@ -243,7 +243,7 @@ lib/
 
 **Emad**
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- GitHub: [@](https://github.com/Emad20112)
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
 
 ## 📧 التواصل
@@ -251,7 +251,7 @@ lib/
 إذا كان لديك أي أسئلة أو اقتراحات، لا تتردد في التواصل:
 
 - Email: your.email@example.com
-- Twitter: [@YOUR_TWITTER](https://twitter.com/YOUR_TWITTER)
+- Twitter: [@Emad Fasil](https://www.linkedin.com/in/emad-fasil-299409336/)
 
 ## 🙏 شكر وتقدير
 
