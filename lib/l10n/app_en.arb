@@ -1,0 +1,195 @@
+{
+  "@@locale": "en",
+  "appTitle": "Money Manager",
+  "@appTitle": {
+    "description": "Application title"
+  },
+  "dashboard": "Dashboard",
+  "@dashboard": {
+    "description": "Main dashboard"
+  },
+  "transactions": "Transactions",
+  "@transactions": {
+    "description": "Transactions list"
+  },
+  "reports": "Reports",
+  "@reports": {
+    "description": "Financial reports"
+  },
+  "goals": "Goals",
+  "@goals": {
+    "description": "Financial goals"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "User profile"
+  },
+  "addTransaction": "Add Transaction",
+  "@addTransaction": {
+    "description": "Add new transaction"
+  },
+  "income": "Income",
+  "@income": {
+    "description": "Transaction type - income"
+  },
+  "expense": "Expense",
+  "@expense": {
+    "description": "Transaction type - expense"
+  },
+  "transfer": "Transfer",
+  "@transfer": {
+    "description": "Transaction type - transfer"
+  },
+  "amount": "Amount",
+  "@amount": {
+    "description": "Transaction amount"
+  },
+  "description": "Description",
+  "@description": {
+    "description": "Transaction description"
+  },
+  "category": "Category",
+  "@category": {
+    "description": "Transaction category"
+  },
+  "account": "Account",
+  "@account": {
+    "description": "Transaction account"
+  },
+  "date": "Date",
+  "@date": {
+    "description": "Transaction date"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save transaction"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel operation"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete transaction"
+  },
+  "edit": "Edit",
+  "@edit": {
+    "description": "Edit transaction"
+  },
+  "totalIncome": "Total Income",
+  "@totalIncome": {
+    "description": "Total income"
+  },
+  "totalExpenses": "Total Expenses",
+  "@totalExpenses": {
+    "description": "Total expenses"
+  },
+  "balance": "Balance",
+  "@balance": {
+    "description": "Current balance"
+  },
+  "recentTransactions": "Recent Transactions",
+  "@recentTransactions": {
+    "description": "Recent transactions"
+  },
+  "noTransactions": "No transactions",
+  "@noTransactions": {
+    "description": "No transactions message"
+  },
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "General error message"
+  },
+  "success": "Success",
+  "@success": {
+    "description": "Success message"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Application settings"
+  },
+  "darkMode": "Dark Mode",
+  "@darkMode": {
+    "description": "Enable dark mode"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Application language"
+  },
+  "currency": "Currency",
+  "@currency": {
+    "description": "Used currency"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notification settings"
+  },
+  "backup": "Backup",
+  "@backup": {
+    "description": "Data backup"
+  },
+  "restore": "Restore",
+  "@restore": {
+    "description": "Restore data"
+  },
+  "export": "Export",
+  "@export": {
+    "description": "Export data"
+  },
+  "import": "Import",
+  "@import": {
+    "description": "Import data"
+  },
+  "recurringTransactions": "Recurring Transactions",
+  "@recurringTransactions": {
+    "description": "Recurring transactions"
+  },
+  "addRecurringTransaction": "Add Recurring Transaction",
+  "@addRecurringTransaction": {
+    "description": "Add new recurring transaction"
+  },
+  "frequency": "Frequency",
+  "@frequency": {
+    "description": "Transaction frequency"
+  },
+  "daily": "Daily",
+  "@daily": {
+    "description": "Daily frequency"
+  },
+  "weekly": "Weekly",
+  "@weekly": {
+    "description": "Weekly frequency"
+  },
+  "monthly": "Monthly",
+  "@monthly": {
+    "description": "Monthly frequency"
+  },
+  "yearly": "Yearly",
+  "@yearly": {
+    "description": "Yearly frequency"
+  },
+  "custom": "Custom",
+  "@custom": {
+    "description": "Custom frequency"
+  },
+  "active": "Active",
+  "@active": {
+    "description": "Active status"
+  },
+  "paused": "Paused",
+  "@paused": {
+    "description": "Paused status"
+  },
+  "completed": "Completed",
+  "@completed": {
+    "description": "Completed status"
+  },
+  "cancelled": "Cancelled",
+  "@cancelled": {
+    "description": "Cancelled status"
+  }
+}

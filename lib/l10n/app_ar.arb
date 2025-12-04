@@ -1,0 +1,195 @@
+{
+  "@@locale": "ar",
+  "appTitle": "مدير الأموال",
+  "@appTitle": {
+    "description": "عنوان التطبيق"
+  },
+  "dashboard": "لوحة التحكم",
+  "@dashboard": {
+    "description": "لوحة التحكم الرئيسية"
+  },
+  "transactions": "المعاملات",
+  "@transactions": {
+    "description": "قائمة المعاملات"
+  },
+  "reports": "التقارير",
+  "@reports": {
+    "description": "التقارير المالية"
+  },
+  "goals": "الأهداف",
+  "@goals": {
+    "description": "الأهداف المالية"
+  },
+  "profile": "الملف الشخصي",
+  "@profile": {
+    "description": "الملف الشخصي للمستخدم"
+  },
+  "addTransaction": "إضافة معاملة",
+  "@addTransaction": {
+    "description": "إضافة معاملة جديدة"
+  },
+  "income": "دخل",
+  "@income": {
+    "description": "نوع المعاملة - دخل"
+  },
+  "expense": "مصروف",
+  "@expense": {
+    "description": "نوع المعاملة - مصروف"
+  },
+  "transfer": "تحويل",
+  "@transfer": {
+    "description": "نوع المعاملة - تحويل"
+  },
+  "amount": "المبلغ",
+  "@amount": {
+    "description": "مبلغ المعاملة"
+  },
+  "description": "الوصف",
+  "@description": {
+    "description": "وصف المعاملة"
+  },
+  "category": "الفئة",
+  "@category": {
+    "description": "فئة المعاملة"
+  },
+  "account": "الحساب",
+  "@account": {
+    "description": "حساب المعاملة"
+  },
+  "date": "التاريخ",
+  "@date": {
+    "description": "تاريخ المعاملة"
+  },
+  "save": "حفظ",
+  "@save": {
+    "description": "حفظ المعاملة"
+  },
+  "cancel": "إلغاء",
+  "@cancel": {
+    "description": "إلغاء العملية"
+  },
+  "delete": "حذف",
+  "@delete": {
+    "description": "حذف المعاملة"
+  },
+  "edit": "تعديل",
+  "@edit": {
+    "description": "تعديل المعاملة"
+  },
+  "totalIncome": "إجمالي الدخل",
+  "@totalIncome": {
+    "description": "إجمالي الدخل"
+  },
+  "totalExpenses": "إجمالي المصروفات",
+  "@totalExpenses": {
+    "description": "إجمالي المصروفات"
+  },
+  "balance": "الرصيد",
+  "@balance": {
+    "description": "الرصيد الحالي"
+  },
+  "recentTransactions": "المعاملات الأخيرة",
+  "@recentTransactions": {
+    "description": "المعاملات الأخيرة"
+  },
+  "noTransactions": "لا توجد معاملات",
+  "@noTransactions": {
+    "description": "رسالة عدم وجود معاملات"
+  },
+  "loading": "جاري التحميل...",
+  "@loading": {
+    "description": "رسالة التحميل"
+  },
+  "error": "خطأ",
+  "@error": {
+    "description": "رسالة خطأ عامة"
+  },
+  "success": "نجح",
+  "@success": {
+    "description": "رسالة نجاح العملية"
+  },
+  "settings": "الإعدادات",
+  "@settings": {
+    "description": "إعدادات التطبيق"
+  },
+  "darkMode": "الوضع الليلي",
+  "@darkMode": {
+    "description": "تفعيل الوضع الليلي"
+  },
+  "language": "اللغة",
+  "@language": {
+    "description": "لغة التطبيق"
+  },
+  "currency": "العملة",
+  "@currency": {
+    "description": "العملة المستخدمة"
+  },
+  "notifications": "الإشعارات",
+  "@notifications": {
+    "description": "إعدادات الإشعارات"
+  },
+  "backup": "النسخ الاحتياطي",
+  "@backup": {
+    "description": "النسخ الاحتياطي للبيانات"
+  },
+  "restore": "استعادة",
+  "@restore": {
+    "description": "استعادة البيانات"
+  },
+  "export": "تصدير",
+  "@export": {
+    "description": "تصدير البيانات"
+  },
+  "import": "استيراد",
+  "@import": {
+    "description": "استيراد البيانات"
+  },
+  "recurringTransactions": "المعاملات المتكررة",
+  "@recurringTransactions": {
+    "description": "المعاملات المتكررة"
+  },
+  "addRecurringTransaction": "إضافة معاملة متكررة",
+  "@addRecurringTransaction": {
+    "description": "إضافة معاملة متكررة جديدة"
+  },
+  "frequency": "التكرار",
+  "@frequency": {
+    "description": "تكرار المعاملة"
+  },
+  "daily": "يومي",
+  "@daily": {
+    "description": "تكرار يومي"
+  },
+  "weekly": "أسبوعي",
+  "@weekly": {
+    "description": "تكرار أسبوعي"
+  },
+  "monthly": "شهري",
+  "@monthly": {
+    "description": "تكرار شهري"
+  },
+  "yearly": "سنوي",
+  "@yearly": {
+    "description": "تكرار سنوي"
+  },
+  "custom": "مخصص",
+  "@custom": {
+    "description": "تكرار مخصص"
+  },
+  "active": "نشط",
+  "@active": {
+    "description": "حالة نشطة"
+  },
+  "paused": "متوقف",
+  "@paused": {
+    "description": "حالة متوقفة"
+  },
+  "completed": "مكتمل",
+  "@completed": {
+    "description": "حالة مكتملة"
+  },
+  "cancelled": "ملغي",
+  "@cancelled": {
+    "description": "حالة ملغية"
+  }
+}

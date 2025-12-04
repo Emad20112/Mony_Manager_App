@@ -1,0 +1,112 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ========================================
+# API Keys and Secrets (CRITICAL - Never commit these!)
+# ========================================
+*.env
+.env
+.env.local
+.env.production
+.env.development
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart
+
+# ========================================
+# Local Database Files (IMPORTANT)
+# ========================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+*.realm
+
+# ========================================
+# Android Additional Files
+# ========================================
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/key.properties
+*.jks
+*.keystore
+**/android/gradlew
+**/android/gradlew.bat
+
+# ========================================
+# iOS Additional Files
+# ========================================
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Runner.xcworkspace/
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# ========================================
+# OS Specific Files
+# ========================================
+Thumbs.db
+desktop.ini
+.DS_Store
+*~
+
+# ========================================
+# Coverage and Test Reports
+# ========================================
+coverage/
+test/.test_coverage.dart
+*.lcov
+
+# ========================================
+# Generated Files
+# ========================================
+*.g.dart
+*.freezed.dart
+*.mocks.dart
