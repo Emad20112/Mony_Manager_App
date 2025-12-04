@@ -250,8 +250,8 @@ lib/
 
 إذا كان لديك أي أسئلة أو اقتراحات، لا تتردد في التواصل:
 
-- Email: your.email@example.com
-- Twitter: [@Emad Fasil](https://www.linkedin.com/in/emad-fasil-299409336/)
+- Email: fyslbdh80@gmail.com
+
 
 ## 🙏 شكر وتقدير
 
