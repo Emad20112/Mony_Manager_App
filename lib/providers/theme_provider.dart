@@ -32,7 +32,12 @@ class ThemeProvider with ChangeNotifier {
     colorScheme: ColorScheme.fromSeed(
       seedColor: const Color(0xFF4CAF50),
       secondary: const Color(0xFF1E1E1E), // Dark card color
-      background: const Color(0xFFE8F5E9), // Light green background
+      background: const Color.fromARGB(
+        255,
+        240,
+        232,
+        245,
+      ), // Light green background
       brightness: Brightness.light,
       surface: Colors.white, // Card surface color
     ),

@@ -56,6 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: SafeArea(child: _getScreen()),
       floatingActionButton: FloatingActionButton(
+        heroTag: 'homeScreenFAB',
         onPressed: _showAddTransactionScreen,
         backgroundColor: Theme.of(context).colorScheme.primary,
         foregroundColor: Colors.white,

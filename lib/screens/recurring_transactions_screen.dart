@@ -124,6 +124,7 @@ class _RecurringTransactionsScreenState
         },
       ),
       floatingActionButton: FloatingActionButton(
+        heroTag: 'recurringTransactionsFAB',
         onPressed: () {
           Navigator.push(
             context,

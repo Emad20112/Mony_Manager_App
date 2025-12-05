@@ -17,6 +17,7 @@ import 'screens/dashboard_screen.dart';
 import 'screens/accounts_screen.dart';
 import 'screens/settings_screen.dart';
 import 'screens/add_transaction_screen.dart';
+import 'screens/splash_screen.dart';
 import 'database/database_helper.dart';
 import 'package:mony_manager/providers/settings_provider.dart';
 import 'package:mony_manager/providers/theme_provider.dart';
@@ -129,7 +130,8 @@ class MoneyManagerApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             initialRoute: '/',
             routes: {
-              '/': (context) => const AuthenticationWrapper(),
+              '/': (context) => const SplashScreen(),
+              '/auth': (context) => const AuthenticationWrapper(),
               '/login': (context) => const LoginScreen(),
               '/register': (context) => const RegisterScreen(),
               '/home': (context) => const HomeScreen(),
@@ -211,6 +213,8 @@ class _HomeScreenState extends State<HomeScreen>
       parent: _animationController,
       curve: Curves.easeInOut,
     );
+    // تشغيل الأنيميشن مباشرة عند بدء التطبيق
+    _animationController.forward();
   }
 
   @override
@@ -247,26 +251,92 @@ class _HomeScreenState extends State<HomeScreen>
       ),
       floatingActionButton: ScaleTransition(
         scale: _animation,
-        child: FloatingActionButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const AddTransactionScreen(),
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            // خلفية دائرية خارجية للتأثير البصري
+            Container(
+              width: 80,
+              height: 80,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                  width: 2,
+                ),
               ),
-            ).then((_) {
-              if (!mounted) return;
-              if (_selectedIndex == 0 ||
-                  _selectedIndex == 1 ||
-                  _selectedIndex == 2) {
-                setState(() {});
-              }
-            });
-          },
-          tooltip: 'إضافة معاملة',
-          elevation: 4,
-          backgroundColor: Theme.of(context).primaryColor,
-          child: const Icon(Icons.add),
+            ),
+            // الزر الرئيسي
+            Container(
+              width: 70,
+              height: 70,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Theme.of(context).colorScheme.primary,
+                    Theme.of(context).colorScheme.primary.withOpacity(0.8),
+                  ],
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Theme.of(
+                      context,
+                    ).colorScheme.primary.withOpacity(0.4),
+                    blurRadius: 20,
+                    offset: const Offset(0, 8),
+                    spreadRadius: 2,
+                  ),
+                  BoxShadow(
+                    color: Theme.of(
+                      context,
+                    ).colorScheme.primary.withOpacity(0.2),
+                    blurRadius: 30,
+                    offset: const Offset(0, 12),
+                    spreadRadius: 5,
+                  ),
+                ],
+              ),
+              child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AddTransactionScreen(),
+                      ),
+                    ).then((_) {
+                      if (!mounted) return;
+                      if (_selectedIndex == 0 ||
+                          _selectedIndex == 1 ||
+                          _selectedIndex == 2) {
+                        setState(() {});
+                      }
+                    });
+                  },
+                  customBorder: const CircleBorder(),
+                  child: Center(
+                    child: Container(
+                      width: 32,
+                      height: 32,
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.2),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.add_rounded,
+                        color: Colors.white,
+                        size: 28,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -308,7 +378,7 @@ class _HomeScreenState extends State<HomeScreen>
             borderRadius: BorderRadius.circular(24),
             child: BottomAppBar(
               shape: const CircularNotchedRectangle(),
-              notchMargin: 12,
+              notchMargin: 8,
               color: Colors.transparent,
               elevation: 0,
               child: Container(
@@ -322,7 +392,7 @@ class _HomeScreenState extends State<HomeScreen>
                   children: <Widget>[
                     _buildNavItem(0, Icons.dashboard, 'لوحة التحكم'),
                     _buildNavItem(1, Icons.list_alt, 'المعاملات'),
-                    const SizedBox(width: 40),
+                    const SizedBox(width: 56),
                     _buildNavItem(2, Icons.account_balance_wallet, 'الحسابات'),
                     _buildNavItem(3, Icons.settings, 'الاعدادات'),
                   ],

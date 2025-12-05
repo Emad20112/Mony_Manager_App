@@ -69,7 +69,9 @@ class _AccountsScreenState extends State<AccountsScreen> {
           Icon(
             Icons.account_balance_wallet_outlined,
             size: 80,
-            color: Theme.of(context).colorScheme.primary.withAlpha((0.5 * 255).round()),
+            color: Theme.of(
+              context,
+            ).colorScheme.primary.withAlpha((0.5 * 255).round()),
           ),
           const SizedBox(height: 16),
           Text(
@@ -85,7 +87,9 @@ class _AccountsScreenState extends State<AccountsScreen> {
             'أضف حسابك الأول للبدء في تتبع أموالك',
             style: TextStyle(
               fontSize: 16,
-              color: Theme.of(context).textTheme.titleMedium?.color?.withAlpha((0.7 * 255).round()),
+              color: Theme.of(
+                context,
+              ).textTheme.titleMedium?.color?.withAlpha((0.7 * 255).round()),
             ),
           ),
           const SizedBox(height: 24),
@@ -122,7 +126,8 @@ class _AccountsScreenState extends State<AccountsScreen> {
     return Container(
       margin: const EdgeInsets.only(bottom: 16),
       decoration: BoxDecoration(
-        color: Theme.of(context).cardTheme.color ??
+        color:
+            Theme.of(context).cardTheme.color ??
             Theme.of(context).colorScheme.surface,
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
@@ -165,7 +170,10 @@ class _AccountsScreenState extends State<AccountsScreen> {
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
-                              color: Theme.of(context).textTheme.titleMedium?.color,
+                              color:
+                                  Theme.of(
+                                    context,
+                                  ).textTheme.titleMedium?.color,
                             ),
                           ),
                           const SizedBox(height: 4),
@@ -173,9 +181,11 @@ class _AccountsScreenState extends State<AccountsScreen> {
                             account.type == 'bank' ? 'حساب جاري' : account.type,
                             style: TextStyle(
                               fontSize: 14,
-                              color: Theme.of(context).textTheme.titleMedium?.color?.withAlpha(
-                                (0.7 * 255).round(),
-                              ),
+                              color: Theme.of(context)
+                                  .textTheme
+                                  .titleMedium
+                                  ?.color
+                                  ?.withAlpha((0.7 * 255).round()),
                             ),
                           ),
                         ],
@@ -184,7 +194,8 @@ class _AccountsScreenState extends State<AccountsScreen> {
                     PopupMenuButton(
                       icon: Icon(
                         Icons.more_vert,
-                        color: Theme.of(context).textTheme.titleMedium?.color?.withAlpha((0.5 * 255).round()),
+                        color: Theme.of(context).textTheme.titleMedium?.color
+                            ?.withAlpha((0.5 * 255).round()),
                       ),
                       itemBuilder:
                           (context) => [
@@ -236,7 +247,8 @@ class _AccountsScreenState extends State<AccountsScreen> {
                         'الرصيد الحالي',
                         style: TextStyle(
                           fontSize: 14,
-                          color: Theme.of(context).textTheme.titleMedium?.color?.withAlpha((0.7 * 255).round()),
+                          color: Theme.of(context).textTheme.titleMedium?.color
+                              ?.withAlpha((0.7 * 255).round()),
                         ),
                       ),
                       Text(
@@ -267,7 +279,9 @@ class _AccountsScreenState extends State<AccountsScreen> {
           if (accountProvider.isLoading) {
             return Center(
               child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(Theme.of(context).colorScheme.primary),
+                valueColor: AlwaysStoppedAnimation<Color>(
+                  Theme.of(context).colorScheme.primary,
+                ),
               ),
             );
           }
@@ -340,13 +354,17 @@ class _AccountsScreenState extends State<AccountsScreen> {
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
                               colors: [
-                                Theme.of(context).colorScheme.primary.withAlpha((0.8 * 255).round()),
+                                Theme.of(context).colorScheme.primary.withAlpha(
+                                  (0.8 * 255).round(),
+                                ),
                                 Theme.of(context).colorScheme.primary,
                               ],
                             ),
                             boxShadow: [
                               BoxShadow(
-                                color: Theme.of(context).colorScheme.primary.withOpacity(0.2),
+                                color: Theme.of(
+                                  context,
+                                ).colorScheme.primary.withOpacity(0.2),
                                 blurRadius: 10,
                                 offset: const Offset(0, 4),
                               ),
@@ -426,6 +444,7 @@ class _AccountsScreenState extends State<AccountsScreen> {
         },
       ),
       floatingActionButton: FloatingActionButton.extended(
+        heroTag: 'accountsFAB',
         onPressed: () {
           Navigator.push(
             context,
